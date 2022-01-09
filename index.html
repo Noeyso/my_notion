@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>MyNotion</title>
+    <script tyep="module" src="./dist/main.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h2>My Notion</h2>
+        <ul class="buttons">
+          <li id="new-image" class="button-item">IMAGE</li>
+          <li id="new-video" class="button-item">VIDEO</li>
+          <li id="new-note" class="button-item">NOTE</li>
+          <li id="new-todo" class="button-item">TASK</li>
+        </ul>
+      </header>
+      <main class="document"></main>
+      <footer class="footer">
+        © Copyright by Dream Coding Academy. All rights reserved.
+      </footer>
+    </div>
+    <div class="modal">
+      <button class="closeBtn">X</button>
+      <div class="inputs">
+        <span>
+          title
+        </span>
+        <input class="input" type="text" />
+        <span>
+          url
+        </span>
+        <input class="input" type="text" />
+      </div>
+      <button class="addBtn">ADD</button>
+    </div>
+  </body>
+</html>
