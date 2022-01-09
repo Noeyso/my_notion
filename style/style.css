@@ -99,7 +99,7 @@ button {
   padding: 0.5rem;
   color: white;
   background-color: var(--accent-color);
-  visibility: visible;
+  visibility: hidden;
 }
 .closeBtn {
   align-self: end;
