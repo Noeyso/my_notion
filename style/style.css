@@ -33,6 +33,9 @@ body {
 ul {
   list-style: none;
 }
+li {
+  cursor: pointer;
+}
 button {
   cursor: pointer;
   border: 0;
@@ -58,7 +61,7 @@ button {
 .buttons {
   display: flex;
 }
-.button-item {
+.buttonItem {
   background-color: white;
   padding: 0.5rem;
   margin-right: 0.5rem;
@@ -87,35 +90,40 @@ button {
   background-color: var(--main-color);
 }
 
-.modal {
+.dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: var(--document-bg-color);
+}
+.dialogContainer {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25rem;
-  height: 15rem;
-  padding: 0.5rem;
-  color: white;
+  padding: 0.4rem;
+  width: 32rem;
   background-color: var(--accent-color);
-  visibility: hidden;
 }
-.closeBtn {
+.close {
   align-self: end;
   color: white;
 }
-.inputs {
+.dialogBody {
   display: flex;
   flex-direction: column;
-  margin-left: 1rem;
 }
 input {
   padding: 0.5rem;
   margin: 0.5rem 1rem 1rem 0;
 }
 
-.addBtn {
+.dialogSubmit {
   padding: 0.5rem;
   margin: 0 1rem;
   align-self: end;

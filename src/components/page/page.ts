@@ -3,7 +3,6 @@ export interface Composable {
   addChild(child: Component): void;
 }
 type OnCloseListener = () => void;
-
 interface SectionContainer extends Component, Composable {
   setOnCloseListener(listener: OnCloseListener): void;
 }
