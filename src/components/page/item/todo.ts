@@ -4,8 +4,8 @@ export class TodoComponent extends BaseComponent<HTMLElement> {
   constructor(title: string, todo: string) {
     super(`<section class="todo">
   				<h2 class="pageItemTitle todoTitle"></h2>
-  				<input type="checkbox" id="todoCheckBox">
-					<label for="todoCheckbox" class="todoLabel"></label>
+					<input type="checkbox" id="todoCheckBox" >
+					<label for="todoCheckbox" class="todoLabel" ></label>
 					</section>`);
 
     const titleElement = this.element.querySelector(

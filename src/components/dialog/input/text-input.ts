@@ -7,11 +7,11 @@ export class TextSectionInput
   constructor() {
     super(`<div class="dialogForm">
             <div class="formContainer">
-                <label for="title">Title</label>
+                <label for="title" class="dialogLabel">Title</label>
                 <input type="text" id="title" />
             </div>
             <div class="formContainer">
-                <label for="body">Body</label>
+                <label for="body" class="dialogLabel">Body</label>
                 <textarea type="text" row="3" id="body"></textarea>
             </div>
         </div>`);

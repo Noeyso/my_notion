@@ -7,6 +7,7 @@
   );
   --main-color: #f1e5f0;
   --accent-color: #5753a3;
+  --point-color: #f64435;
   --text-accent-color: #ffe498;
   --text-edit-bg-color: #575757;
   --border-color: #3f3f3f;
@@ -131,7 +132,9 @@ button {
   text-decoration: none;
 }
 
-input {
+#title,
+#url,
+#body {
   width: 80%;
   padding: 0.5rem;
   margin: 0.5rem 1rem 1rem 0;
@@ -139,7 +142,8 @@ input {
 #body {
   width: 80%;
 }
-label {
+
+.dialogLabel {
   display: flex;
 }
 
@@ -158,6 +162,9 @@ label {
   box-shadow: 2px 2px 6px var(--shadow-color);
   background: var(--accent-color);
 }
+.pageItemBody {
+  width: 100%;
+}
 .pageItemControls {
   padding-right: 0.5em;
 }
@@ -166,6 +173,9 @@ label {
   color: white;
 }
 
+#todoCheckBox {
+  margin: 0;
+}
 .todoLabel,
 .noteBody {
   color: var(--main-color);
@@ -186,4 +196,28 @@ label {
 .imageTitle {
   flex: 40% 1 1;
   margin-left: 0.5em;
+}
+
+/* ---Drag and Drop ---*/
+
+.muteChildren * {
+  pointer-events: none;
+}
+
+.lifted {
+  animation: drag_start 250ms;
+  opacity: 0.2;
+}
+
+@keyframes drag_start {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.dropArea {
+  border: 2px solid var(--point-color);
 }

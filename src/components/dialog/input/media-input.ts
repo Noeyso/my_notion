@@ -7,11 +7,11 @@ export class MediaSectionInput
   constructor() {
     super(`<div class="dialogForm">
             <div class="formContainer">
-                <label for="title">Title</label>
+                <label for="title" class="dialogLabel">Title</label>
                 <input type="text" id="title" />
             </div>
             <div class="formContainer">
-                <label for="url">URL</label>
+                <label for="url" class="dialogLabel">URL</label>
                 <input type="text" id="url" />
             </div>
         </div>`);
