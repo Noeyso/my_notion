@@ -4,7 +4,7 @@ export class ImageComponent extends BaseComponent<HTMLElement> {
   constructor(title: string, url: string) {
     super(`<section class="image">
   				<div class="imageHolder"><img class="imgeThumbnail" /></div>
-					<h2 class="imageTitle"></h2></section>`);
+					<h2 class="pageItemTitle imageTitle"></h2></section>`);
 
     const imageElement = this.element.querySelector(
       ".imgeThumbnail"

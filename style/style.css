@@ -107,25 +107,83 @@ button {
   display: flex;
   flex-direction: column;
   padding: 0.4rem;
-  width: 32rem;
+  width: 25rem;
   background-color: var(--accent-color);
 }
-.close {
-  align-self: end;
-  color: white;
-}
-.dialogBody {
+.dialogForm {
   display: flex;
   flex-direction: column;
+  margin: 0 1rem;
 }
+.close {
+  align-self: flex-end;
+  color: white;
+  padding: 0.2rem;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 3px;
+  transition: color 250ms ease;
+}
+.close:hover,
+.close:focus {
+  transform: scale(1.5);
+  color: var(--shadow-color);
+  text-decoration: none;
+}
+
 input {
+  width: 80%;
   padding: 0.5rem;
   margin: 0.5rem 1rem 1rem 0;
 }
+#body {
+  width: 80%;
+}
+label {
+  display: flex;
+}
 
 .dialogSubmit {
+  text-align: center;
   padding: 0.5rem;
-  margin: 0 1rem;
-  align-self: end;
+  margin: 2rem 1rem;
   background-color: var(--main-color);
+}
+.pageItem {
+  margin: 2em;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 6px var(--shadow-color);
+  background: var(--accent-color);
+}
+.pageItemControls {
+  padding-right: 0.5em;
+}
+
+.pageItemTitle {
+  color: white;
+}
+
+.todoLabel,
+.noteBody {
+  color: var(--main-color);
+}
+
+.video,
+.image {
+  display: flex;
+  width: 100%;
+}
+
+.videoPlayer,
+.imageHolder {
+  flex: 60% 1 1;
+}
+
+.videoTitle,
+.imageTitle {
+  flex: 40% 1 1;
+  margin-left: 0.5em;
 }
